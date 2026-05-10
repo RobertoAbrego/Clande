@@ -18,3 +18,22 @@ CREATE TABLE reparaciones (
     estado VARCHAR(50),
     fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
+INSERT INTO usuarios(nombre_usuario, password_hash, rol)
+VALUES
+(
+    'admin',
+    '$2y$10$EPOITtMH2vxoHlcUAxcXRO.OA3a0igP6N1QfphmAQWRNu3DvxvJL6',
+    'administrador'
+),
+(
+    'editor',
+    '$2y$10$Pj4i4VC9rtFqxt3BSkn9UeviqpTnQB80/A6pY0lIPJnVWEmvwM1U6',
+    'editor'
+),
+(
+    'lector',
+    '$2y$10$GsXvUglg7TT1tVsrDARVqOdVqGhhL5cBO32.3ZLyafeGudLyBPUZC',
+    'lector'
+);
